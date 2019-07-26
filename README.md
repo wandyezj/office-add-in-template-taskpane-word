@@ -47,7 +47,7 @@
     * Set to Windows
     * use the latest version of .Net
 1. Update the manifest
-    * replace local host references with references to the azure website url
+    * replace localhost references with references to the azure website url
 
 ## Publish the Add-In to the store
 
