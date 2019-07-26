@@ -7,6 +7,9 @@
   },
   "license": "",
   "scripts": {
+    "localhost-certificates-install": "npx office-addin-dev-certs install",
+    "localhost-certificates-verify": "npx office-addin-dev-certs verify",
+    "server": "node_modules/.bin/http-server %CD% --ssl --cert %USERPROFILE%\\.office-addin-dev-certs\\localhost.crt --key %USERPROFILE%\\.office-addin-dev-certs\\localhost.key -c-1 --cors -p 3000",
     "validate-manifest": "npx office-toolbox validate -m manifest.xml",
     "build": "./node_modules/.bin/tsc"
   },

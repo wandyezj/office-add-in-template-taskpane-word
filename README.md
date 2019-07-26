@@ -1,30 +1,45 @@
 # office-add-in-template-taskpane-word
-office add-in template for word
 
-https://docs.microsoft.com/en-us/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator
+## Getting Started 
 
-## Start the Add-In in a web browser
+### Install
 
-npm install
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [Node](https://nodejs.org)
+
+## Local Testing
+
+### Install Packages
+
+> npm install
+
+### Build the project
 
 > npm run build
 
-* run this command every time files are changed
+### Set local server certificates
 
-npm run watch
+1. Install localhost certificates
+    > npm run localhost-certificates-install
 
-* watch for changes and update
+    * Make sure to accept the prompts
 
-npm run start:web
+1. Check certificates were installed
 
+    > npm run localhost-certificates-verify
+
+### Start a local server
+
+> npm run server
+
+### Side Load Add-In
 
 [Side Load the add-in on the web](https://docs.microsoft.com/en-us/office/dev/add-ins/testing/sideload-office-add-ins-for-testing#sideload-an-office-add-in-in-office-on-the-web)
 
 
-## Start the Add-In in local file
-
 ## Deploy the Add-In to a Website
 
+1. [Join GitHub](https://github.com/join)
 1. Push to a GitHub Repository
 1. Sign up for azure
 1. Deploy the site to Azure and set up automatic deployment
