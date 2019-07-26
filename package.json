@@ -1,33 +1,19 @@
 {
-  "name": "office-addin-taskpane",
+  "name": "",
   "version": "0.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/OfficeDev/Office-Addin-TaskPane.git"
+    "url": ""
   },
-  "license": "MIT",
-  "config": {
-    "app-to-debug": "word",
-    "app-type-to-debug": "desktop",
-    "dev-server-port": 3000
-  },
+  "license": "",
   "scripts": {
-    "sideload": "office-toolbox sideload -m manifest.xml -a word",
-    "start": "office-addin-debugging start manifest.xml",
-    "start:desktop": "office-addin-debugging start manifest.xml desktop",
-    "start:web": "office-addin-debugging start manifest.xml web",
-    "stop": "office-addin-debugging stop manifest.xml",
-    "unload": "office-toolbox remove -m manifest.xml -a word",
-    "validate": "office-toolbox validate -m manifest.xml",
-    "build-simple": "./node_modules/.bin/tsc"
+    "validate-manifest": "npx office-toolbox validate -m manifest.xml",
+    "build": "./node_modules/.bin/tsc"
   },
   "dependencies": {},
   "devDependencies": {
     "@types/office-js": "^1.0.9",
     "@types/office-runtime": "^1.0.8",
-    "office-addin-debugging": "^2.3.0",
-    "office-addin-dev-certs": "^1.2.4",
-    "office-toolbox": "^0.1.1",
     "typescript": "^3.5.1"
   }
 }

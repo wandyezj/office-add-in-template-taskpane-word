@@ -1,20 +1,21 @@
 {
   "compilerOptions": {
-    "allowJs": true,
-    "baseUrl": ".",
-    "experimentalDecorators": true,
-    "jsx": "react",
-    "noEmitOnError": true,
-    "sourceMap": true,
-    "target": "esnext",
-    "lib": [
-        "es2015",      "dom"
-    ]
+        "allowJs": true,
+        "baseUrl": ".",
+        "experimentalDecorators": true,
+        "jsx": "react",
+        "noEmitOnError": true,
+        "sourceMap": false,
+        "target": "esnext",
+        "lib": [
+            "es2015",
+            "dom"
+            ]
   },
   "exclude": [
-    "node_modules",
-    "dist",
-    "lib",
-    "lib-amd"
-  ]
+        "node_modules",
+        "dist",
+        "lib",
+        "lib-amd"
+        ]
 }

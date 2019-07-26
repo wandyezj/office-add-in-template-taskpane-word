@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
-  <!-- Unique GUID for the Add-In -->
+  <!-- Add-In Unique GUID-->
   <Id>00000000-0000-0000-0000-000000000000</Id>
-  <Version>0.0.0.0</Version>
+  <!-- Add-In Version-->
+  <Version>1.0.0.0</Version>
   <ProviderName>manifest.xml provider name</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="manifest.xml DisplayName"/>
@@ -21,11 +22,6 @@
     <Hosts>
       <Host xsi:type="Document">
         <DesktopFormFactor>
-          <GetStarted>
-            <Title resid="GetStarted.Title"/>
-            <Description resid="GetStarted.Description"/>
-            <LearnMoreUrl resid="GetStarted.LearnMoreUrl"/>
-          </GetStarted>
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <OfficeTab id="TabHome">
               <Group id="CommandsGroup">
@@ -47,7 +43,7 @@
                     <bt:Image size="80" resid="Icon.80x80" />
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <TaskpaneId>ButtonIdShowTaskpane</TaskpaneId>
                     <SourceLocation resid="Taskpane.Url" />
                   </Action>
                 </Control>
@@ -64,16 +60,13 @@
         <bt:Image id="Icon.80x80" DefaultValue="https://localhost:3000/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812" />
         <bt:Url id="Taskpane.Url" DefaultValue="https://localhost:3000/taskpane.html" />
       </bt:Urls>
       <bt:ShortStrings>
-        <bt:String id="GetStarted.Title" DefaultValue="manifext.xml GetStarted.Title" />
         <bt:String id="CommandsGroup.Label" DefaultValue="manifest.xml CommandsGroup.Label" />
         <bt:String id="TaskpaneButton.Label" DefaultValue="manifext.xml TaskpaneButton.Label" />
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="GetStarted.Description" DefaultValue="manifest.xml GetStarted.Description" />
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="manifest.xml TaskpaneButton.Tooltip" />
       </bt:LongStrings>
     </Resources>
