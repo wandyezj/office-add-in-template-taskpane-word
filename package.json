@@ -17,6 +17,6 @@
   "devDependencies": {
     "@types/office-js": "^1.0.9",
     "@types/office-runtime": "^1.0.8",
-    "typescript": "^3.5.1"
+    "typescript": "*"
   }
 }
