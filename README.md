@@ -53,6 +53,7 @@
 
 1. Sign up as an office developer
 1. Create Store profile
+    * Use your LinkedIn profile as the developer website
 1. Create a neat icon for your Add-In
     * suggestion create a svg and resize appropriately for each format
     * https://www.npmjs.com/package/convert-svg-to-png
